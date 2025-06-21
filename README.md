@@ -11,7 +11,7 @@ A simple Flask API boilerplate for user registration, login (JWT), and user mana
 | 1  | Set up Flask-JWT-Extended in app config    | ✅ Done    |
 | 2  | Create `UserModel` and `UserSchema`        | ✅ Done    |
 | 3  | Build `/register` route with password hash | ✅ Done    |
-| 4  | Create `/login` route with token return    | ⬜ Pending |
+| 4  | Create `/login` route with token return    | ✅ Done    |
 | 5  | Protect routes with `@jwt_required()`      | ⬜ Pending |
 | 6  | Add custom claims / user identity logic    | ⬜ Pending |
 | 7  | Implement logout and token blacklist       | ⬜ Pending |
