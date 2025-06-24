@@ -96,11 +96,14 @@ A beginner-friendly Flask API boilerplate for user registration, login, JWT auth
 
 ---
 
+
+
 ### 🧪 Test Auth-Protected Route
 
-**GET /test**
+**GET /test** 
 
-> Requires valid JWT token in header.
+
+#### ✅ Example Response
 
 ```json
 {
@@ -110,4 +113,22 @@ A beginner-friendly Flask API boilerplate for user registration, login, JWT auth
 
 ---
 
-Let me know if you want this in a downloadable `.md` file or want to auto-generate the same for new apps.
+### 🔐 Example Usage with JWT Token
+
+#### 🧰 Using `curl`:
+
+```bash
+curl -X GET http://localhost:5000/test \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN_HERE"
+```
+
+#### 🧪 Using Postman:
+
+1. Set method: `GET`
+2. URL: `http://localhost:5000/test`
+3. Go to **Headers** tab:
+
+   * Key: `Authorization`
+   * Value: `Bearer YOUR_JWT_TOKEN_HERE`
+
+> Replace `YOUR_JWT_TOKEN_HERE` with your actual token.
